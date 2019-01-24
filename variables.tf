@@ -177,3 +177,11 @@ variable "k8s_haproxy_ram" {
 variable "k8s_node_prefix" {
   description = "Prefix for the name of the virtual machines and the hostname of the Kubernetes nodes"
 }
+
+variable "kubeadm" {
+  description = "Use kubeadm to install k8s"
+}
+
+variable "skip_non_kubeadm_warning" {
+  description = "Skip kubeadm warning"
+}

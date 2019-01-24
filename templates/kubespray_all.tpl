@@ -106,7 +106,8 @@ vsphere_resource_pool: "${vsphere_resource_pool}"
 #openstack_lbaas_monitor_max_retries: "3"
 
 ## Uncomment to enable experimental kubeadm deployment mode
-#kubeadm_enabled: false
+kubeadm_enabled: false
+skip_non_kubeadm_warning: true
 ## Set these proxy values in order to update package manager and docker daemon to use proxies
 #http_proxy: ""
 #https_proxy: ""

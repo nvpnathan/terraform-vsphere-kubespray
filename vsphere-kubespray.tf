@@ -53,14 +53,16 @@ data "template_file" "kubespray_all" {
   template = "${file("templates/kubespray_all.tpl")}"
 
   vars {
-    vsphere_vcenter_ip     = "${var.vsphere_vcenter}"
-    vsphere_user           = "${var.vsphere_vcp_user}"
-    vsphere_password       = "${var.vsphere_vcp_password}"
-    vsphere_datacenter     = "${var.vsphere_datacenter}"
-    vsphere_datastore      = "${var.vsphere_vcp_datastore}"
-    vsphere_working_dir    = "${var.vm_folder}"
-    vsphere_resource_pool  = "${var.vsphere_resource_pool}"
-    loadbalancer_apiserver = "${var.k8s_haproxy_ip}"
+    vsphere_vcenter_ip       = "${var.vsphere_vcenter}"
+    vsphere_user             = "${var.vsphere_vcp_user}"
+    vsphere_password         = "${var.vsphere_vcp_password}"
+    vsphere_datacenter       = "${var.vsphere_datacenter}"
+    vsphere_datastore        = "${var.vsphere_vcp_datastore}"
+    vsphere_working_dir      = "${var.vm_folder}"
+    vsphere_resource_pool    = "${var.vsphere_resource_pool}"
+    loadbalancer_apiserver   = "${var.k8s_haproxy_ip}"
+    kubeadm                  = "${var.kubeadm}"
+    skip_non_kubeadm_warning = "${var.skip_non_kubeadm_warning}"
   }
 }
 
