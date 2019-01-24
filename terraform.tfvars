@@ -85,3 +85,5 @@ k8s_haproxy_ram = "1024"
 k8s_node_prefix = "k8s-kubespray"
 
 kubeadm = "false"
+
+skip_kubeadm_warning = "true"
