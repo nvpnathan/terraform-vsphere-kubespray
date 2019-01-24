@@ -1,4 +1,5 @@
 terraform.tfplan
 terraform.tfstate
 ./*.tfstate
+terraform.tfstate.backup
 .terraform/
