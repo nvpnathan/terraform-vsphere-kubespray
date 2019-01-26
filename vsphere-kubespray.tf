@@ -62,7 +62,7 @@ data "template_file" "kubespray_all" {
     vsphere_resource_pool    = "${var.vsphere_resource_pool}"
     loadbalancer_apiserver   = "${var.k8s_haproxy_ip}"
     kubeadm                  = "${var.kubeadm}"
-    skip_non_kubeadm_warning = "${var.skip_non_kubeadm_warning}"
+    skip_kubeadm_warning     = "${var.skip_kubeadm_warning}"
   }
 }
 

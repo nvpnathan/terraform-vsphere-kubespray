@@ -182,6 +182,6 @@ variable "kubeadm" {
   description = "Use kubeadm to install k8s"
 }
 
-variable "skip_non_kubeadm_warning" {
+variable "skip_kubeadm_warning" {
   description = "Skip kubeadm warning"
 }
